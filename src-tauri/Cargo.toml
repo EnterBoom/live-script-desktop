@@ -1,0 +1,21 @@
+[package]
+name = "live-script-desktop"
+version = "0.1.0"
+description = "Local live-script desktop app"
+authors = ["Codex"]
+edition = "2021"
+
+[lib]
+name = "live_script_desktop_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2.0.1", features = [] }
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tauri = { version = "2.2.5", features = [] }
+tauri-plugin-dialog = "2.2.0"
+tauri-plugin-shell = "2.2.0"
+

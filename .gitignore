@@ -1,0 +1,16 @@
+node_modules/
+dist/
+src-tauri/target/
+src-tauri/gen/
+src-tauri/icons/android/
+src-tauri/icons/ios/
+models/
+*.bin
+*.xlsx
+*.aliyun.json
+*.srt
+__pycache__/
+.env
+.env.*
+!.env.example
+.DS_Store
